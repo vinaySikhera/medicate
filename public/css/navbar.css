@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.upperNavbar {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #14457b;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbarAnckerTag {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+.leftUpperNavbar {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 25px;
+}
+
+.rightUpperNavbar {
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.rightUpperNavbar div {
+    font-size: 12px;
+}
+
+.nichaNavbar {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: aliceblue;
+    position: relative;
+}
+
+.logo {
+    width: 150px;
+
+}
+
+.secondNavbarClick {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* Allows items to wrap */
+    text-align: center;
+    justify-content: center;
+    gap: 25px;
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.secondNavbarClick .dropdown {
+    position: relative;
+}
+
+.secondNavbarClick div {
+    color: #18100f;
+    font-weight: 400;
+    position: relative;
+}
+
+.secondNavbarClick .dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none;
+}
+
+.secondNavbarClick .dropdown-content a {
+    display: block;
+    color: #18100f;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.secondNavbarClick .dropdown-content a:hover {
+    background-color: #2490eb;
+    color: #fff;
+}
+
+.secondNavbarClick .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.secondNavbarClick div:hover {
+    color: #2490eb;
+}
+
+.secondNavbarClick button {
+    padding: 11px 15px;
+    font-size: 14px;
+    background-color: #2490eb;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.secondNavbarClick button:hover {
+    background-color: #18100f;
+}
+
+.menuBtn {
+    font-weight: 600;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #2490eb;
+    color: #fff;
+    position: absolute;
+    right: 21px;
+    top: 48px;
+    display: none;
+}
+
+.fa-shopping-cart {
+    position: relative;
+    font-size: 18px;
+}
+
+.incOfShopingCart {
+    position: absolute;
+    top: 14px;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 50%;
+    background-color: #2490eb;
+}
+
+/* Media Queries */
+@media (max-width: 1111px) {
+    .secondNavbarClick {
+        display: none;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .menuBtn {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .upperNavbar {
+        display: none;
+    }
+
+    .nichaNavbar {
+        flex-direction: row;
+    }
+
+    .leftUpperNavbar,
+    .rightUpperNavbar,
+    .secondNavbarClick {
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .secondNavbarClick div,
+    .secondNavbarClick button {
+        font-size: 12px;
+    }
+
+    .menuBtn {
+        display: block;
+        top: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .upperNavbar {
+        display: none;
+    }
+
+    .secondNavbarClick {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .secondNavbarClick div,
+    .secondNavbarClick button {
+        font-size: 10px;
+        margin: 8px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+}

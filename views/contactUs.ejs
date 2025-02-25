@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/contactUs.css">
+    <style>
+        /* body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .box1 {
+            background: black;
+        }
+
+        .box2 {
+            background: teal;
+        }
+
+        .box3 {
+            background: purple;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>you can see my current loaction</h1>
+    <div class="box box1" id="div1">Div 1</div>
+    <div class="box box2" id="div2">Div 2</div>
+    <div class="box box3" id="div3">Div 3</div>
+</body>
+
+</html>
+<script>
+
+    window.onscroll = function () { myFunction() };
+
+    function myFunction() {
+        if (document.documentElement.scrollTop > 10) {
+            document.getElementById("div1").style.backgroundColor = "red";
+            document.getElementById("div1").innerText = "this is my first div"
+        }
+        if (document.documentElement.scrollTop > 290) {
+            document.getElementById("div2").style.backgroundColor = "red";
+            document.getElementById("div2").innerText = "this is my second div"
+        }
+        if (document.documentElement.scrollTop > 590) {
+            document.getElementById("div3").style.backgroundColor = "red";
+            document.getElementById("div3").innerText = "this is my third div"
+        }
+    }
+</script>

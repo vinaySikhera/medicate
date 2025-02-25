@@ -1,0 +1,430 @@
+/* Footer Main Container */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.footerMainContainer {
+    background-color: #14457b;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+}
+
+/* Footer Section Styles */
+.footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    padding: 20px;
+    margin-top: 55px;
+
+}
+
+/* Single Footer Container */
+.singleFooterContainer {
+    width: 250px;
+    padding: 20px;
+    /* margin: 20px; */
+    text-align: left;
+}
+
+/* Footer Heading */
+.singleFooterContainer h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Footer Paragraph Text */
+.singleFooterContainer p {
+    font-size: 14px;
+    color: #e3e3e3;
+    margin-bottom: 10px;
+}
+
+/* Footer Social Icons */
+.singleFooterContainer div span {
+    margin-right: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.singleFooterContainer div span:hover {
+    color: #f1f1f1;
+}
+
+/* Resent Post Section */
+.resentPost {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 320px;
+    margin-bottom: 15px;
+}
+
+.resentPost img {
+    width: 40px;
+    height: auto;
+    object-fit: cover;
+}
+
+.resentPost div {
+    display: flex;
+    flex-direction: column;
+}
+
+.resentPost div span {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.resentPost div strong {
+    color: #fff;
+}
+
+/* Our Course Section */
+.ourCourse {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.ourCourse div p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+/* Footer Contact Section */
+.footerContainer .singleFooterContainer div {
+    margin-bottom: 10px;
+}
+
+.footerContainer .singleFooterContainer div span {
+    font-weight: bold;
+}
+
+/* Footer Bottom Text */
+footer p {
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Horizontal Rule Styling */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+.footerMessageSection {
+    background-color: #2490eb;
+    position: absolute;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    top: -50px;
+    left: 10%;
+}
+
+.msgSessection1In,
+.formSessectionIn2,
+.insideForm {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.textOFFooterMessage {
+    font-size: 28px;
+    line-height: 36px;
+}
+.iconfooter{
+    font-size: 12px;
+}
+
+.insideForm>div>input {
+    width: 510px;
+    height: 43px;
+    padding: 0 17px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #ffffff;
+    outline: none;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.insideForm>div>button {
+    background-color: #fff;
+    height: 43px;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
+    border: none;
+}
+
+.msgSessection1In {
+    width: 504px;
+}
+
+.formSessectionIn2 {
+    width: 681px;
+}
+
+
+/* Base styles for larger screens remain unchanged */
+.footerMessageSection {
+    background-color: #2490eb;
+    position: absolute;
+    width: 80%;
+    margin: auto;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    padding: 30px;
+    top: -50px;
+    /* left: 10%;
+    right: 10%; */
+}
+
+.msgSessection1In,
+.formSessectionIn2,
+.insideForm {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.textOFFooterMessage {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.insideForm>div>input {
+    width: 510px;
+    height: 43px;
+    padding: 0 17px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #ffffff;
+    outline: none;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.insideForm>div>button {
+    background-color: #fff;
+    height: 43px;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
+    border: none;
+}
+
+.msgSessection1In {
+    width: 504px;
+}
+
+.formSessectionIn2 {
+    width: 681px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .footerMessageSection {
+        flex-direction: column;
+        /* Stack elements vertically */
+        padding: 20px;
+        /* width: 90%; */
+        /* Slightly narrower for smaller screens */
+    }
+
+    .msgSessection1In {
+        width: 100%;
+        text-align: center;
+        /* Center-align text */
+    }
+
+    .formSessectionIn2 {
+        width: 100%;
+    }
+
+    .textOFFooterMessage {
+        font-size: 24px;
+        /* Adjust font size */
+        line-height: 32px;
+    }
+
+    .insideForm>div>input {
+        width: 100%;
+        /* Input takes full width */
+        max-width: 500px;
+    }
+
+    .insideForm>div>button {
+        width: auto;
+        /* Allow button to adjust size dynamically */
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footerMessageSection {
+        padding: 15px;
+        top: -30px;
+        /* Adjust position for smaller viewports */
+    }
+
+    .textOFFooterMessage {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .insideForm {
+        flex-direction: column;
+        /* Stack inputs and buttons vertically */
+        gap: 15px;
+    }
+
+    .insideForm>div>input {
+        width: 100%;
+        /* Full width for small screens */
+    }
+
+    .insideForm>div>button {
+        width: 100%;
+        /* Button spans the full width */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footerMessageSection {
+        width: 100%;
+        /* Full-width footer */
+        left: 0;
+        /* Center align on small screens */
+        padding: 10px;
+    }
+
+    .textOFFooterMessage {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .insideForm>div>input {
+        width: 100%;
+        /* Full width for mobile screens */
+        height: 40px;
+        /* Slightly smaller input */
+    }
+
+    .insideForm>div>button {
+        height: 40px;
+        padding: 8px;
+    }
+}
+
+
+
+
+
+
+
+
+/* Responsive Design */
+
+/* For Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .footerContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .singleFooterContainer {
+        width: 280px;
+    }
+}
+
+/* For Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .footerContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .singleFooterContainer {
+        width: 90%;
+        text-align: center;
+    }
+
+    .resentPost {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .readMoreBtn {
+        margin: 0;
+    }
+
+    .footerContainer .singleFooterContainer div span {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+/* For Small Mobile Screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .footerContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .singleFooterContainer {
+        width: 100%;
+        text-align: center;
+    }
+
+    .resentPost {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .singleFooterContainer h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .singleFooterContainer p {
+        font-size: 12px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .portfolio-section {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .portfolio-header .tagline {
+            font-size: 16px;
+            color: #007bff;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-header h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        /* Slider Container */
+        .slider-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 300px;
+            margin: 0 15px;
+            position: relative;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Hover Overlay */
+        .hover-overlay {
+            position: absolute;
+            bottom: 26px;
+            left: 0;
+            width: 80%;
+            /* margin: auto; */
+            background-color: white;
+            color: #333;
+            padding: 9px;
+            margin: 0px 29px;
+            height: 0;
+            overflow: hidden;
+            border-radius: 3px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: height 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+
+        /* Hover Effect */
+        .slide:hover .hover-overlay {
+            height: calc(100% - 250px);
+            /* Accounts for padding and margin */
+            margin: 0px 29px;
+            /* Aligns overlay properly on hover */
+            padding: 9px;
+        }
+
+        /* Hover Overlay Text Styling */
+        .hover-overlay span {
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .hover-overlay h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .slide:hover .hover-overlay {
+            opacity: 1;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .slider-container {
+                padding: 0 10px;
+            }
+
+            .slide {
+                min-width: 240px;
+                margin: 0 10px;
+            }
+
+            .portfolio-header h1 {
+                font-size: 28px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .slide {
+                min-width: 200px;
+                margin: 0 5px;
+            }
+
+            .portfolio-header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="portfolio-section">
+        <div class="portfolio-header">
+            <span class="tagline">OUR PORTFOLIO</span>
+            <h1>All The Great Work That We Done</h1>
+        </div>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="https://medicate.peacefulqode.co.in/wp-content/uploads/2021/12/1-1-600x700.jpg"
+                        alt="Portfolio 1">
+                    <div class="hover-overlay">
+                        <span>FAMILY</span>
+                        <h3>Investigations</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://medicate.peacefulqode.co.in/wp-content/uploads/2021/12/2-2-600x700.jpg"
+                        alt="Portfolio 2">
+                    <div class="hover-overlay">
+                        <span>FAMILY</span>
+                        <h3>Investigations</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://medicate.peacefulqode.co.in/wp-content/uploads/2021/12/3-1-600x700.jpg"
+                        alt="Portfolio 3">
+                    <div class="hover-overlay">
+                        <span>FAMILY</span>
+                        <h3>Investigations</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://medicate.peacefulqode.co.in/wp-content/uploads/2021/12/4-2-600x700.jpg"
+                        alt="Portfolio 4">
+                    <div class="hover-overlay">
+                        <span>FAMILY</span>
+                        <h3>Investigations</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://medicate.peacefulqode.co.in/wp-content/uploads/2022/02/2.jpg" alt="Portfolio 4">
+                    <div class="hover-overlay">
+                        <span>FAMILY</span>
+                        <h3>Investigations</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://medicate.peacefulqode.co.in/wp-content/uploads/2022/02/2.jpg" alt="Portfolio 4">
+                    <div class="hover-overlay">
+                        <span>FAMILY</span>
+                        <h3>Investigations</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
