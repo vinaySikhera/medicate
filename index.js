@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', (req, res) => {
-    res.render('home', { title: "home page" });
+    res.render('index', { title: "home page" });
 })
 app.get('/navbar', (req, res) => {
     res.render('common/navbar');
